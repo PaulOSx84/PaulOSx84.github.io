@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spedizione</title>
+</head>
+<body>
+<h2>Spedizione</h2>
+<table>
+<form action="http://localhost" method="get" id="delivery" autocomplete="on">
+    <tr>
+        <td>
+            <label for="firstname">Nome *</label>
+        </td>
+        <td>
+            <input type="text" id="firstname" name="firstname" placeholder="Inserisci il Nome..." required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="surname">Cognome *</label>
+        </td>
+        <td>
+            <input type="text" id="surname" name="surname" placeholder="Inserisci il Cognome..." required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="address">Via *</label>
+        </td>
+        <td>
+
+            <input type="text" id="address" name="address" placeholder="Inserisci la tua via..." required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="civico">N° Civico *</label>
+        </td>
+        <td>
+            <input type="number" id="civico" name="civico" placeholder="Inserisci numero civico..." required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="city">Citta' *</label>
+        </td>
+        <td>
+            <input type="text" id="city" name="city" placeholder="Inserisci la tua città..." required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="prv">Provincia</label>
+        </td>
+        <td>
+            <select name="province" id="prv">
+                <option value="1">Ancona</option>
+                <option value="2">Bari</option>
+                <option value="3">Como</option>
+                <option value="4">Domodossola</option>
+                <option value="5">Empoli</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="cap">CAP *</label>
+        </td>
+        <td>
+            <input type="number" id="cap" name="cap" placeholder="Inserisci il tuo CAP..." required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="country">Paese *</label>
+        </td>
+        <td>
+            <input type="text" id="country" name="country" placeholder="Inserisci il tuo Paese..." required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="email">E-mail *</label>
+        </td>
+        <td>
+            <input type="email" id="email" name="email" placeholder="Inserisci la tua email..." required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="tel">Tel</label>
+        </td>
+        <td>
+            <input type="tel" id="tel" name="tel" placeholder="Inserisci il tuo numero di tel...">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" value="invia">
+        </td>
+    </tr>
+</form>
+    <tr>
+        <td>
+            &nbsp;
+        </td>
+        <td>
+            <button form="delivery" type="reset" >Reset</button>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
