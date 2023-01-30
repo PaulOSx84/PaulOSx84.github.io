@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Spedizione</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" >
 </head>
 <body>
 <h2>Spedizione</h2>
@@ -13,7 +14,7 @@
             <label for="firstname">Nome *</label>
         </td>
         <td>
-            <input type="text" id="firstname" name="firstname" placeholder="Inserisci il Nome..." required>
+            <input type="text" id="firstname" name="firstname" pattern="*[a-z,A-Z]" placeholder="Inserisci il Nome..." required>
         </td>
     </tr>
     <tr>
@@ -100,6 +101,17 @@
             <input type="submit" value="invia">
         </td>
     </tr>
+    <div>
+        <label for="typePC">Scegli il Computer</label>
+        <input list="tipo_PC" id="typePC" name="typePC" >
+        <datalist id="tipo_PC">
+            <option value="PC intel">
+            <option value="PC Amd">
+            <option value="MAC intel">
+            <option value="MAC M Series">
+        </datalist>
+
+    </div>
 </form>
     <tr>
         <td>
@@ -110,5 +122,11 @@
         </td>
     </tr>
 </table>
+<time datetime="2023-01-26">2023-01-26</time>
+<br>
+<picture>
+    <source srcset="/myimg/desktop.jpg" media=" (min-widht:1500px) ">
+    <img src="/myimg/desktop.jpg" alt="roast">
+</picture>
 </body>
 </html>
